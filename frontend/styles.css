@@ -1,0 +1,177 @@
+:root{
+
+    --barra: rgb(6, 100, 100);
+    --fondo: rgb(69, 139, 160);
+    --letras: rgb(255, 248, 248);
+    --letras-hover: rgb(202, 237, 248);
+    --opciones: rgb(252, 252, 252);
+    --opciones-hover: rgb(219, 216, 216);
+    --btn-color: rgb(82, 157, 226);
+    --btn-color-hover: rgb(54, 106, 155);
+    --color-btn: rgb(253, 249, 249);
+    --color-btn-hover: rgb(221, 221, 221);
+    --negro: rgb(31, 29, 29);
+    --eliminar: rgb(245, 5, 5);
+    --eliminar-hover: rgb(173, 2, 2);
+    --editar: rgba(22, 173, 2, 0.986);
+    --editar-hover: rgba(15, 95, 4, 0.986);
+
+    --logo: "Grechen Fuemen", serif;
+    --fuente: "Atkinson Hyperlegible Next", serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Para que 1rem sea igual a 10px*/
+ }
+ *, *:before, *:after {
+    box-sizing: inherit;
+ }
+
+body{
+    font-size: 1.6rem;
+	line-height: 2;
+    margin: 0;
+    font-family: var(--fuente);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Encabezado */
+
+.titulo{
+    margin: 40px auto;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.tdl{
+    color: var(--letras);
+    font-family: var(--logo);
+    font-weight: bolder;
+}
+.tdl:hover{
+    color: var(--letras-hover);
+}
+
+.encabezado{
+    background-color: var(--barra);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+/* Formulario To-do-list */
+
+.contenido-principal{
+    text-align: center;
+    margin: 45px auto;
+    padding: 25px;
+    width: 75%;
+}
+
+.formulario{
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    background-color: var(--opciones);
+    -webkit-box-shadow: 3px 6px 38px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 38px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 38px -3px rgba(0,0,0,0.75);
+}
+.formulario fieldset{
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid var(--negro);
+    background-color: var(--fondo);
+}
+.formulario fieldset label{
+    color: var(--negro);
+    font-weight: bolder;
+}
+
+.formulario-input{
+    display: grid;
+    margin-top: 15px;
+}
+.formulario-input label{
+    font-weight: bold;
+}
+
+.tarea-input{
+    width: 50%;
+    margin: 5px auto;
+    height: 37px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.formulario-btns{
+    margin: 15px auto;
+}
+
+.btn{
+    background-color: var(--btn-color);
+    color: var(--color-btn);
+    border-radius: 10px;
+    border: none;
+    height: 37px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--btn-color-hover);
+    color: var(--color-btn-hover);
+}
+
+/* Tabla de tareas */
+
+.tabla{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+ }
+ 
+ .tabla th{
+    border: 1px solid var(--negro);
+    width: 15rem;
+ }
+ .tabla td{
+    border: 1px solid var(--negro);
+ }
+ .tabla th:first-child{
+    border-radius: 15px 0 0 0;
+ }
+ .tabla th:last-child{
+    border-radius: 0 15px 0 0;
+ }
+ .tabla tr:last-child td:first-child{
+    border-radius: 0 0 0 15px;
+ }
+ .tabla tr:last-child td:last-child{
+    border-radius: 0 0 15px 0;
+ }
+
+ .operacion{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    
+    
+ }
+ .eliminar-btn{
+    background-color: var(--eliminar);
+    border: none;
+    color: var(--color-btn);
+    margin-right: 5px;
+ }
+ .eliminar-btn:hover{
+    background-color: var(--eliminar-hover);
+ }
+ 
+

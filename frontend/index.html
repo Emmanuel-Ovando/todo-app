@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="titulo">
+            <a href="#" class="tdl">
+                To Do List
+            </a>
+        </div>
+    </header>
+    <main class="contenido-principal">
+        <div class="contenido-formulario">
+            <form id="formulario-tarea" class="formulario">
+                <fieldset>
+                    <label for="">Ingresa una tarea</label>
+                </fieldset>
+                <div class="formulario-input">
+                    <label for="tarea">Tarea: </label>
+                    <input type="text" id="tarea" placeholder="Ej. Estudiar" class="tarea-input">
+                </div>
+                <div class="formulario-btns">
+                    <input type="submit" value="Agregar tarea" class="btn agregar-btn">
+                    <input type="button" value="Ver tareas"  class="btn ver-btn">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="app.js"></script>
+        
+</body>
+</html>
